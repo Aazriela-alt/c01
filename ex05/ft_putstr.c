@@ -1,10 +1,10 @@
-int	ft_strlen(char *str)
-{
-	int	a = 0;
+#include <unistd.h>
 
-	while (str[a] ! = '\0')
+void	ft_putstr(char *str);
+{
+	while (*str != '\0')
 	{
-		whrite(1, &str[a], 1);
-		a++;
+		write(1, str, 1);
+		str++;
 	}
 }
